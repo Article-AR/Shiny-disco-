@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم المدير</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>لوحة تحكم المدير</h1>
+        <div id="login-container">
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password">
+            <button id="login-btn">دخول</button>
+            <p id="error-message" style="color: red; display: none;">كلمة المرور غير صحيحة!</p>
+        </div>
+        <div id="admin-panel" style="display: none;">
+            <h2>إدارة الأسئلة</h2>
+            <button id="add-question-btn">إضافة سؤال</button>
+            <button id="delete-question-btn">حذف سؤال</button>
+            <button id="update-question-btn">تعديل سؤال</button>
+            
+            <h2>إحصائيات الموقع</h2>
+            <button id="view-stats-btn">عرض الإحصائيات</button>
+            <div id="stats-container" style="display: none;">
+                <h3>إحصائيات</h3>
+                <ul id="stats-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
